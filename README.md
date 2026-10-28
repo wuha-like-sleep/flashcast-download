@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/wuha-like-sleep/flashcast-download/releases/latest"><img alt="下载最新版" src="https://img.shields.io/github/v/release/wuha-like-sleep/flashcast-download?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=4C6FFF&labelColor=1A2347"></a>
-  <img alt="平台" src="https://img.shields.io/badge/Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-%E6%94%AF%E6%8C%81-34D399?style=for-the-badge&labelColor=1A2347">
+  <img alt="平台" src="https://img.shields.io/badge/Windows%20%C2%B7%20macOS%20%C2%B7%20Linux%20%C2%B7%20Android-%E6%94%AF%E6%8C%81-34D399?style=for-the-badge&labelColor=1A2347">
   <img alt="1080P 60 帧" src="https://img.shields.io/badge/1080P-60%20%E5%B8%A7-7B3DFF?style=for-the-badge&labelColor=1A2347">
 </p>
 
@@ -51,8 +51,10 @@
 | <img src="https://cdn.simpleicons.org/apple/white" width="16"> **macOS** 12.3+（Intel 芯片） | `FlashCast-*-macos-x86_64.dmg` | 打开后拖进"应用程序" |
 | <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="16"> **Ubuntu / Debian** | `flashcast_*_amd64.deb` | `sudo apt install ./flashcast_*.deb` |
 | <img src="https://cdn.simpleicons.org/linux/FCC624" width="16"> **其他 Linux** | `flashcast-*-linux-amd64.tar.gz` | 解压后运行 `bin/flashcast` |
+| <img src="https://cdn.simpleicons.org/android/3DDC84" width="16"> **Android 手机**（发送端） | `FlashCast-*-android.apk` | 下载后点击安装（Android 8.0 及以上） |
+| <img src="https://cdn.simpleicons.org/androidtv/3DDC84" width="16"> **Android TV / 电视盒子**（接收端） | `FlashCast-TV-*-androidtv.apk` | 用 U 盘或电视助手安装 |
 
-> Android、iOS 和 Android TV 版本正在开发中。
+> iOS 版即将推出。
 
 ## 🚀 三步开始投屏
 
@@ -117,6 +119,7 @@
 | Windows | Windows 10 64 位 |
 | macOS | macOS 12.3 Monterey |
 | Linux | glibc 2.35 以上（Ubuntu 22.04、Debian 12 及更新版本），X11 桌面 |
+| Android | Android 8.0 及以上 |
 | 网络 | 两台设备在同一局域网；推荐 5GHz Wi-Fi 或有线网络 |
 
 ---
