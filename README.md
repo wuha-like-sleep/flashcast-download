@@ -47,6 +47,7 @@
 | 系统 | 安装包 | 安装方式 |
 |:--|:--|:--|
 | <img src="https://cdn.simpleicons.org/windows11/0078D4" width="16"> **Windows** 10 / 11 | `FlashCast-*-windows-x64.zip` | 解压后双击 `FlashCast.exe` |
+| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="16"> **Windows 单接收版** | `FlashCast-Receiver-Setup-*-windows-x64.exe` | 只接收不发送，适合会议室、展厅的显示电脑；可选开机自动启动 |
 | <img src="https://cdn.simpleicons.org/apple/white" width="16"> **macOS** 12.3+（Apple 芯片） | `FlashCast-*-macos-arm64.dmg` | 打开后拖进"应用程序" |
 | <img src="https://cdn.simpleicons.org/apple/white" width="16"> **macOS** 12.3+（Intel 芯片） | `FlashCast-*-macos-x86_64.dmg` | 打开后拖进"应用程序" |
 | <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="16"> **Ubuntu / Debian** | `flashcast_*_amd64.deb` | `sudo apt install ./flashcast_*.deb` |
