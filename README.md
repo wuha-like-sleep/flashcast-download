@@ -54,8 +54,9 @@
 | <img src="https://cdn.simpleicons.org/linux/FCC624" width="16"> **其他 Linux** | `flashcast-*-linux-amd64.tar.gz` | 解压后运行 `bin/flashcast` |
 | <img src="https://cdn.simpleicons.org/android/3DDC84" width="16"> **Android 手机**（发送端） | `FlashCast-*-android.apk` | 下载后点击安装（Android 8.0 及以上） |
 | <img src="https://cdn.simpleicons.org/androidtv/3DDC84" width="16"> **Android TV / 电视盒子**（接收端） | `FlashCast-TV-*-androidtv.apk` | 用 U 盘或电视助手安装 |
+| <img src="https://cdn.simpleicons.org/intel/0071C5" width="16"> **工控机 / 迷你主机**（接收端系统） | `FlashCast-Box-*-amd64.img.xz` | 用 [balenaEtcher](https://etcher.balena.io/) 或 Rufus 写入硬盘或 U 盘，开机选择语言后即可接收 |
 
-> iOS 版即将推出。
+> iOS 版正在上架 App Store，即将推出。
 
 ## 🚀 三步开始投屏
 
