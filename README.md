@@ -139,7 +139,8 @@
 
 ## 🛟 帮助与隐私
 
-- 遇到问题或有建议：[提交 Issue](https://github.com/wuha-like-sleep/flashcast-download/issues)
+- 遇到问题请联系：**[info@by-wave.com](mailto:info@by-wave.com)**
+- 也可以在这里[提交 Issue](https://github.com/wuha-like-sleep/flashcast-download/issues)
 - [隐私政策](PRIVACY.md)：不收集任何数据，画面只在局域网内传输
 
 ## 💻 系统要求

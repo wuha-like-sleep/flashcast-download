@@ -34,10 +34,10 @@
 
 ## 联系我们
 
-如有任何问题，请在 [GitHub Issues](https://github.com/wuha-like-sleep/flashcast-download/issues) 留言。
+如有任何问题，请发邮件至 [info@by-wave.com](mailto:info@by-wave.com)，或在 [GitHub Issues](https://github.com/wuha-like-sleep/flashcast-download/issues) 留言。
 
 ---
 
 ## English summary
 
-FlashCast does not collect, upload or sell any personal data. There are no accounts, no servers, no ads, analytics or crash reporting. Screen content is captured only after you start casting and is sent directly over your local network to the receiver you choose; it is never stored or uploaded. Local network access is used only to find and connect to receivers. The few settings the app keeps (device name, language, extra subnets) stay on your device. Questions: [GitHub Issues](https://github.com/wuha-like-sleep/flashcast-download/issues).
+FlashCast does not collect, upload or sell any personal data. There are no accounts, no servers, no ads, analytics or crash reporting. Screen content is captured only after you start casting and is sent directly over your local network to the receiver you choose; it is never stored or uploaded. Local network access is used only to find and connect to receivers. The few settings the app keeps (device name, language, extra subnets) stay on your device. Questions: [info@by-wave.com](mailto:info@by-wave.com) or [GitHub Issues](https://github.com/wuha-like-sleep/flashcast-download/issues).
