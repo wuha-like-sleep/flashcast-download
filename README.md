@@ -87,6 +87,14 @@
 3. 以后就可以正常双击打开了。
 
 （macOS 14 及更早版本也可以：右键点击 FlashCast → 打开 → 再点一次打开。）
+
+**也可以用终端一步解决**：先把 FlashCast 拖进"应用程序"文件夹，然后打开"终端"，粘贴下面这行命令，按回车并输入电脑密码（输入时不显示）：
+
+```bash
+sudo xattr -rd com.apple.quarantine /Applications/FlashCast.app
+```
+
+之后双击即可正常打开。
 </details>
 
 <details>
