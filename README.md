@@ -1,57 +1,127 @@
-# 闪投 FlashCast
+<p align="center">
+  <img src="assets/hero.png" alt="闪投 FlashCast：局域网低延迟投屏" width="100%">
+</p>
 
-局域网低延迟投屏。电脑、手机投到电视或另一台电脑，1080P 60 帧，不需要服务器，也不需要外网。
+<p align="center">
+  <a href="https://github.com/wuha-like-sleep/flashcast-download/releases/latest"><img alt="下载最新版" src="https://img.shields.io/github/v/release/wuha-like-sleep/flashcast-download?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=4C6FFF&labelColor=1A2347"></a>
+  <img alt="平台" src="https://img.shields.io/badge/Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-%E6%94%AF%E6%8C%81-34D399?style=for-the-badge&labelColor=1A2347">
+  <img alt="1080P 60 帧" src="https://img.shields.io/badge/1080P-60%20%E5%B8%A7-7B3DFF?style=for-the-badge&labelColor=1A2347">
+</p>
 
-## 下载
-
-到 [Releases](../../releases/latest) 页面下载对应系统的安装包：
-
-| 系统 | 文件 | 说明 |
-|---|---|---|
-| Windows 10/11（64 位） | `FlashCast-*-windows-x64.zip` | 解压即可使用 |
-| macOS 12.3 及以上（Apple 芯片） | `FlashCast-*-macos-arm64.dmg` | 拖进"应用程序" |
-| macOS 12.3 及以上（Intel 芯片） | `FlashCast-*-macos-x86_64.dmg` | 拖进"应用程序" |
-| Ubuntu / Debian | `flashcast_*_amd64.deb` | `sudo apt install ./flashcast_*.deb` |
-| 其他 Linux | `flashcast-*-linux-amd64.tar.gz` | 解压即可使用 |
-
-Android、iOS 和 Android TV 版本正在开发中。
-
-## 怎么用
-
-**接收端**（显示画面的那台设备）
-
-打开 FlashCast 接收端，屏幕上会显示设备名和 6 位**投屏码**。
-
-**发送端**（要投出去的那台电脑）
-
-运行 `flashcast-send`，从列表里选择设备，或者直接输入投屏码：
-
-```
-flashcast-send --code 482913
-```
-
-两台设备只需要在同一个局域网（同一个 Wi-Fi 或同一台路由器）里。
-
-## 会议室里有多块屏幕？
-
-每块屏幕显示的投屏码都不一样，输入哪块屏幕的投屏码，就投到哪块，多台电脑可以同时各投各的、互不干扰。屏幕正在被使用时，别人再投会收到"正在使用中"的提示。
-
-## 常见问题
-
-**macOS 提示"无法验证开发者"**
-右键点击 FlashCast → 打开 → 再点一次"打开"。
-
-**macOS 投屏是黑屏**
-系统设置 → 隐私与安全性 → 屏幕录制，允许 FlashCast（从终端运行时，要允许"终端"），然后重新打开。
-
-**找不到接收端**
-- 确认两台设备连的是同一个网络。
-- Windows 第一次运行时如果防火墙询问，请允许"专用网络"访问。
-- 有些公共 Wi-Fi 开启了"客户端隔离"，设备之间无法直接通信，换个网络试试。
-
-**延迟高或卡顿**
-尽量让接收端走有线网络，或者使用 5GHz Wi-Fi。
+<p align="center">
+  <b>把电脑屏幕投到电视、投影仪或另一台电脑上。</b><br>
+  同一个局域网就能用，不需要服务器，不需要外网，不需要注册账号。
+</p>
 
 ---
 
-FlashCast 为闭源软件。安装包内附带的第三方组件及其许可证见安装包中的 `THIRD_PARTY_NOTICES.md` 和 `licenses` 目录。
+## ✨ 特点
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚡ 低延迟</h3>
+      自研传输协议，配合显卡硬件编码。前向纠错抵抗 Wi-Fi 丢包，不重传、不卡顿。演示 PPT、播放视频、操作软件都跟手。
+    </td>
+    <td width="50%" valign="top">
+      <h3>🔒 完全本地</h3>
+      画面只在你的局域网里传输，不经过任何服务器。断开外网也照常使用，适合对保密有要求的会议室和车间。
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <h3>🏢 多屏会议室</h3>
+      每块屏幕显示自己的 6 位投屏码，输入哪块的码就投到哪块。多台电脑可以同时各投各的、互不干扰；屏幕正在使用时，别人投不进来。
+    </td>
+    <td valign="top">
+      <h3>📦 开箱即用</h3>
+      安装包已经内置所有组件，下载即可使用，运行时不联网下载任何东西。界面支持简体中文、繁體中文、English、日本語和한국어。
+    </td>
+  </tr>
+</table>
+
+## 📥 下载
+
+前往 **[Releases 页面](https://github.com/wuha-like-sleep/flashcast-download/releases/latest)**，选择对应系统的安装包：
+
+| 系统 | 安装包 | 安装方式 |
+|:--|:--|:--|
+| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="16"> **Windows** 10 / 11 | `FlashCast-*-windows-x64.zip` | 解压后双击 `FlashCast.exe` |
+| <img src="https://cdn.simpleicons.org/apple/white" width="16"> **macOS** 12.3+（Apple 芯片） | `FlashCast-*-macos-arm64.dmg` | 打开后拖进"应用程序" |
+| <img src="https://cdn.simpleicons.org/apple/white" width="16"> **macOS** 12.3+（Intel 芯片） | `FlashCast-*-macos-x86_64.dmg` | 打开后拖进"应用程序" |
+| <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="16"> **Ubuntu / Debian** | `flashcast_*_amd64.deb` | `sudo apt install ./flashcast_*.deb` |
+| <img src="https://cdn.simpleicons.org/linux/FCC624" width="16"> **其他 Linux** | `flashcast-*-linux-amd64.tar.gz` | 解压后运行 `bin/flashcast` |
+
+> Android、iOS 和 Android TV 版本正在开发中。
+
+## 🚀 三步开始投屏
+
+<table>
+  <tr>
+    <td width="50%" align="center"><img src="assets/receiver.png" alt="接收端待机画面"></td>
+    <td width="50%" align="center"><img src="assets/app.png" alt="发送端选择设备"></td>
+  </tr>
+  <tr>
+    <td valign="top"><b>① 打开接收端</b><br>在电视或大屏连接的电脑上打开闪投，点 <b>作为接收端</b>。屏幕上会显示设备名和投屏码。</td>
+    <td valign="top"><b>② 选择设备</b><br>在你的电脑上打开闪投，点击 <b>附近的设备</b> 里的那块屏幕，或者直接输入它的投屏码。</td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="assets/casting.png" alt="投屏中" width="60%"><br>
+  <b>③ 开始投屏</b>：画面马上出现在大屏上。点 <b>停止投屏</b> 即可结束。
+</p>
+
+## ❓ 常见问题
+
+<details>
+<summary><b>macOS 提示"无法验证开发者"</b></summary>
+<br>
+右键点击 <b>FlashCast</b> → <b>打开</b>，在弹出的对话框里再点一次 <b>打开</b>。以后就可以正常双击打开了。
+</details>
+
+<details>
+<summary><b>macOS 投屏时提示没有屏幕录制权限</b></summary>
+<br>
+打开 <b>系统设置 → 隐私与安全性 → 屏幕录制</b>，允许 FlashCast，然后重新打开闪投。
+</details>
+
+<details>
+<summary><b>找不到接收端</b></summary>
+<br>
+
+- 确认两台设备连的是同一个网络（同一个 Wi-Fi 或同一台路由器）。
+- Windows 第一次运行时如果防火墙询问，请允许 **专用网络** 访问。
+- 部分公共 Wi-Fi 开启了"客户端隔离"，设备之间无法直接通信，可以换个网络，或者直接输入投屏码再试一次。
+</details>
+
+<details>
+<summary><b>画面卡顿或延迟高</b></summary>
+<br>
+
+- 接收端尽量使用有线网络。
+- 使用 5GHz Wi-Fi，并让发送端离路由器近一些。
+- 发送端电脑有独立显卡或较新的核显时，会自动使用硬件编码，延迟更低。
+</details>
+
+<details>
+<summary><b>需要联网或注册账号吗？</b></summary>
+<br>
+不需要。闪投只在局域网内工作，不连接任何服务器，也不收集任何数据。
+</details>
+
+## 💻 系统要求
+
+| | 最低要求 |
+|:--|:--|
+| Windows | Windows 10 64 位 |
+| macOS | macOS 12.3 Monterey |
+| Linux | glibc 2.35 以上（Ubuntu 22.04、Debian 12 及更新版本），X11 桌面 |
+| 网络 | 两台设备在同一局域网；推荐 5GHz Wi-Fi 或有线网络 |
+
+---
+
+<p align="center">
+  <img src="assets/logo.svg" width="40"><br>
+  <sub>闪投 FlashCast · 闭源软件，可免费下载使用 · 第三方组件许可见安装包内的 <code>THIRD_PARTY_NOTICES.md</code></sub>
+</p>
