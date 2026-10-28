@@ -137,6 +137,11 @@
 不需要。闪投只在局域网内工作，不连接任何服务器，也不收集任何数据。
 </details>
 
+## 🛟 帮助与隐私
+
+- 遇到问题或有建议：[提交 Issue](https://github.com/wuha-like-sleep/flashcast-download/issues)
+- [隐私政策](PRIVACY.md)：不收集任何数据，画面只在局域网内传输
+
 ## 💻 系统要求
 
 | | 最低要求 |
