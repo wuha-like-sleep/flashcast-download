@@ -45,7 +45,7 @@
 | <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="14"> **Ubuntu / Debian** | [安装包](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.3.0/flashcast_0.3.0_amd64.deb) | `sudo apt install ./flashcast_0.3.0_amd64.deb` |
 | <img src="https://cdn.simpleicons.org/linux/999999" width="14"> **其他 Linux** | [压缩包](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.3.0/flashcast-0.3.0-linux-amd64.tar.gz) | 解压后运行 `bin/flashcast` |
 | <img src="https://cdn.simpleicons.org/android/3DDC84" width="14"> **Android 手机** | [手机版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.3.0/FlashCast-0.3.0-android.apk) | Android 8.0 及以上 |
-| <img src="https://cdn.simpleicons.org/apple/999999" width="14"> **iPhone / iPad** | [TestFlight 测试版](https://testflight.apple.com/join/yDJJBePw) | 先在 App Store 安装 TestFlight，再打开链接加入；App Store 搜索 **Flash Cast** |
+| <img src="https://cdn.simpleicons.org/apple/999999" width="14"> **iPhone / iPad** | [TestFlight 测试版](https://testflight.apple.com/join/yDJJBePw) | 先在 App Store 安装 TestFlight，再打开链接加入；App Store 正式版（**Flash Cast**）审核通过后即可搜索下载 |
 
 > 不知道 Mac 是哪种芯片：点屏幕左上角苹果菜单 → 关于本机，“芯片”一栏写 Apple M… 是 Apple 芯片，写 Intel 是 Intel 芯片。
 >
