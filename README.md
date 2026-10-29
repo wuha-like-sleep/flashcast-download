@@ -42,21 +42,30 @@
 
 ## 📥 下载
 
-前往 **[Releases 页面](https://github.com/wuha-like-sleep/flashcast-download/releases/latest)**，选择对应系统的安装包：
+闪投分两部分：**接收端**装在显示画面的设备上，**发送端**装在要把画面投出去的设备上。点文件名即可下载，所有版本见 **[Releases 页面](https://github.com/wuha-like-sleep/flashcast-download/releases/latest)**。
 
-| 系统 | 安装包 | 安装方式 |
+### 📺 接收端 · 装在电视、会议室大屏、展厅屏幕上
+
+| 设备 | 下载 | 说明 |
 |:--|:--|:--|
-| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="16"> **Windows** 10 / 11 | `FlashCast-*-windows-x64.zip` | 解压后双击 `FlashCast.exe` |
-| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="16"> **Windows 单接收版** | `FlashCast-Receiver-Setup-*-windows-x64.exe` | 只接收不发送，适合会议室、展厅的显示电脑；可选开机自动启动 |
-| <img src="https://cdn.simpleicons.org/apple/white" width="16"> **macOS** 12.3+（Apple 芯片） | `FlashCast-*-macos-arm64.dmg` | 打开后拖进"应用程序" |
-| <img src="https://cdn.simpleicons.org/apple/white" width="16"> **macOS** 12.3+（Intel 芯片） | `FlashCast-*-macos-x86_64.dmg` | 打开后拖进"应用程序" |
-| <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="16"> **Ubuntu / Debian** | `flashcast_*_amd64.deb` | `sudo apt install ./flashcast_*.deb` |
-| <img src="https://cdn.simpleicons.org/linux/FCC624" width="16"> **其他 Linux** | `flashcast-*-linux-amd64.tar.gz` | 解压后运行 `bin/flashcast` |
-| <img src="https://cdn.simpleicons.org/android/3DDC84" width="16"> **Android 手机**（发送端） | `FlashCast-*-android.apk` | 下载后点击安装（Android 8.0 及以上） |
-| <img src="https://cdn.simpleicons.org/androidtv/3DDC84" width="16"> **Android TV / 电视盒子**（接收端） | `FlashCast-TV-*-androidtv.apk` | 用 U 盘或电视助手安装 |
-| <img src="https://cdn.simpleicons.org/intel/0071C5" width="16"> **工控机 / 迷你主机**（接收端系统） | `FlashCast-Box-*-amd64.img.xz` | 用 [balenaEtcher](https://etcher.balena.io/) 或 Rufus 写入硬盘或 U 盘，开机选择语言后即可接收 |
+| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="16"> **Windows 电脑** | [安装程序（.exe）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-Receiver-Setup-0.1.0-windows-x64.exe) · [免安装版（.zip）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-Receiver-0.1.0-windows-x64.zip) | 会议室、展厅的显示电脑；可选开机自动启动，自动设置防火墙 |
+| <img src="https://cdn.simpleicons.org/androidtv/3DDC84" width="16"> **Android 电视 / 电视盒子** | [电视版（.apk）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-TV-0.1.0-androidtv.apk) | 用 U 盘或电视助手安装 |
+| <img src="https://cdn.simpleicons.org/intel/0071C5" width="16"> **工控机 / 迷你主机** | [系统镜像（.img.xz）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-Box-0.1.0-amd64.img.xz) | 用 [balenaEtcher](https://etcher.balena.io/) 或 Rufus 写入硬盘，开机即是接收端 |
+| <img src="https://cdn.simpleicons.org/apple/white" width="16"> **Mac** · <img src="https://cdn.simpleicons.org/linux/FCC624" width="16"> **Linux** | 用下方的电脑版 | 打开后点右上角 **作为接收端** |
 
-> iOS 版正在上架 App Store，即将推出。
+### 💻 发送端 · 装在要投屏的电脑和手机上
+
+| 设备 | 下载 | 说明 |
+|:--|:--|:--|
+| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="16"> **Windows** 10 / 11 | [电脑版（.zip）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-0.1.0-windows-x64.zip) | 解压后双击 `FlashCast.exe`（也可以当接收端） |
+| <img src="https://cdn.simpleicons.org/apple/white" width="16"> **Mac**（Apple 芯片：M1/M2/M3/M4） | [电脑版（.dmg）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-0.1.0-macos-arm64.dmg) | 打开后拖进"应用程序"；第一次打开见[常见问题](#-常见问题) |
+| <img src="https://cdn.simpleicons.org/apple/white" width="16"> **Mac**（Intel 芯片） | [电脑版（.dmg）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-0.1.0-macos-x86_64.dmg) | 同上 |
+| <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="16"> **Ubuntu / Debian** | [安装包（.deb）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/flashcast_0.1.0_amd64.deb) | `sudo apt install ./flashcast_0.1.0_amd64.deb` |
+| <img src="https://cdn.simpleicons.org/linux/FCC624" width="16"> **其他 Linux** | [压缩包（.tar.gz）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/flashcast-0.1.0-linux-amd64.tar.gz) | 解压后运行 `bin/flashcast` |
+| <img src="https://cdn.simpleicons.org/android/3DDC84" width="16"> **Android 手机** | [手机版（.apk）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-0.1.0-android.apk) | Android 8.0 及以上 |
+| <img src="https://cdn.simpleicons.org/apple/white" width="16"> **iPhone / iPad** | App Store 搜索 **Flash Cast** | 审核中，即将上架 |
+
+> 不知道 Mac 是哪种芯片？点屏幕左上角  → **关于本机**，"芯片"一栏写 Apple M… 就是 Apple 芯片，写 Intel 就是 Intel 芯片。
 
 ## 🚀 三步开始投屏
 
