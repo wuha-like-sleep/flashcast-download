@@ -57,7 +57,7 @@
 
 | 设备 | 下载 | 说明 |
 |:--|:--|:--|
-| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="16"> **Windows** 10 / 11 | [电脑版（.zip）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.2.0/FlashCast-0.2.0-windows-x64.zip) | 解压后双击 `FlashCast.exe`（也可以当接收端） |
+| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="16"> **Windows** 10 / 11 | [安装程序（.exe）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.2.0/FlashCast-Setup-0.2.0-windows-x64.exe) · [免安装版（.zip）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.2.0/FlashCast-0.2.0-windows-x64.zip) | 双击安装，投屏和接收都可以；自动设置防火墙，可选开机自动启动接收端 |
 | <img src="https://cdn.simpleicons.org/apple/white" width="16"> **Mac**（Apple 芯片：M1/M2/M3/M4） | [电脑版（.dmg）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-0.1.0-macos-arm64.dmg) | 打开后拖进"应用程序"；第一次打开见[常见问题](#-常见问题)（Mac 版暂时是 0.1.0，0.2 签名版即将更新） |
 | <img src="https://cdn.simpleicons.org/apple/white" width="16"> **Mac**（Intel 芯片） | [电脑版（.dmg）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-0.1.0-macos-x86_64.dmg) | 同上 |
 | <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="16"> **Ubuntu / Debian** | [安装包（.deb）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.2.0/flashcast_0.2.0_amd64.deb) | `sudo apt install ./flashcast_0.2.0_amd64.deb` |
