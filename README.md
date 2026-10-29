@@ -48,9 +48,9 @@
 
 | 设备 | 下载 | 说明 |
 |:--|:--|:--|
-| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="16"> **Windows 电脑** | [安装程序（.exe）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-Receiver-Setup-0.1.0-windows-x64.exe) · [免安装版（.zip）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-Receiver-0.1.0-windows-x64.zip) | 会议室、展厅的显示电脑；可选开机自动启动，自动设置防火墙 |
+| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="16"> **Windows 电脑** | [安装程序（.exe）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-Receiver-Setup-0.1.0-windows-x64.exe) · [免安装版（.zip）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-Receiver-0.1.0-windows-x64.zip) | 会议室、展厅的显示电脑；可选开机自动启动，自动设置防火墙 · **[安装说明](INSTALL-WINDOWS.md)** |
 | <img src="https://cdn.simpleicons.org/androidtv/3DDC84" width="16"> **Android 电视 / 电视盒子** | [电视版（.apk）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-TV-0.1.0-androidtv.apk) | 用 U 盘或电视助手安装 |
-| <img src="https://cdn.simpleicons.org/intel/0071C5" width="16"> **工控机 / 迷你主机** | [系统镜像（.img.xz）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-Box-0.1.0-amd64.img.xz) | 用 [balenaEtcher](https://etcher.balena.io/) 或 Rufus 写入硬盘，开机即是接收端 |
+| <img src="https://cdn.simpleicons.org/intel/0071C5" width="16"> **工控机 / 迷你主机** | [系统镜像（.img.xz）](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.1.0/FlashCast-Box-0.1.0-amd64.img.xz) | 写入工控机硬盘，开机即是接收端 · **[安装说明和硬件要求](INSTALL-BOX.md)** |
 | <img src="https://cdn.simpleicons.org/apple/white" width="16"> **Mac** · <img src="https://cdn.simpleicons.org/linux/FCC624" width="16"> **Linux** | 用下方的电脑版 | 打开后点右上角 **作为接收端** |
 
 ### 💻 发送端 · 装在要投屏的电脑和手机上
