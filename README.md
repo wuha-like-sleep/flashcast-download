@@ -26,11 +26,13 @@
 
 **接收端**装在显示画面的设备上，**发送端**装在要把画面投出去的设备上。点文件名直接下载，所有文件见 [Releases 页面](https://github.com/wuha-like-sleep/flashcast-download/releases/latest)。
 
+Windows 最新修复版为 **0.4.2**；其他平台仍使用下方的 **0.4.0** 下载。Windows 更新改善双屏接收，设置入口为右下角小齿轮（F2），诊断数据默认隐藏（F1 查看）。
+
 ### 接收端：装在电视、会议室大屏、展厅屏幕上
 
 | 设备 | 下载 | 说明 |
 |:--|:--|:--|
-| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="14"> **Windows 电脑** | [安装程序](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.0/FlashCast-Receiver-Setup-0.4.0-windows-x64.exe) · [免安装版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.0/FlashCast-Receiver-0.4.0-windows-x64.zip) | 会议室、展厅的显示电脑；可选开机自动启动，自动设置防火墙 · [安装说明](INSTALL-WINDOWS.md) |
+| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="14"> **Windows 电脑** | [安装程序](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/FlashCast-Receiver-Setup-0.4.2-windows-x64.exe) · [免安装版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/FlashCast-Receiver-0.4.2-windows-x64.zip) | 会议室、展厅的显示电脑；可选开机自动启动，自动设置防火墙 · [安装说明](INSTALL-WINDOWS.md) |
 | <img src="https://cdn.simpleicons.org/androidtv/3DDC84" width="14"> **Android 电视 / 盒子** | [电视版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.0/FlashCast-TV-0.4.0-androidtv.apk) | 用 U 盘或电视助手安装 |
 | <img src="https://cdn.simpleicons.org/intel/0071C5" width="14"> **工控机 / 迷你主机** | [系统镜像](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.0/FlashCast-Box-0.4.0-amd64.img.xz) | 写进 U 盘，插到工控机上开机即可安装 · [安装说明和硬件要求](INSTALL-BOX.md) |
 | **Mac / Linux 电脑** | 用下方的电脑版 | 打开后点右上角“作为接收端” |
@@ -39,7 +41,7 @@
 
 | 设备 | 下载 | 说明 |
 |:--|:--|:--|
-| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="14"> **Windows 10 / 11** | [安装程序](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.0/FlashCast-Setup-0.4.0-windows-x64.exe) · [免安装版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.0/FlashCast-0.4.0-windows-x64.zip) | 投屏和接收都可以；安装时可选语言 |
+| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="14"> **Windows 10 / 11** | [安装程序](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/FlashCast-Setup-0.4.2-windows-x64.exe) · [免安装版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/FlashCast-0.4.2-windows-x64.zip) | 投屏和接收都可以；安装时可选语言 |
 | <img src="https://cdn.simpleicons.org/apple/999999" width="14"> **Mac**（Apple 芯片） | [电脑版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.0/FlashCast-0.4.0-macos-arm64.dmg) | M1 / M2 / M3 / M4；已通过苹果公证，拖进“应用程序”即可打开 |
 | <img src="https://cdn.simpleicons.org/apple/999999" width="14"> **Mac**（Intel 芯片） | [电脑版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.0/FlashCast-0.4.0-macos-x86_64.dmg) | 同上 |
 | <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="14"> **Ubuntu / Debian** | [安装包](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.0/flashcast_0.4.0_amd64.deb) | `sudo apt install ./flashcast_0.4.0_amd64.deb` |
