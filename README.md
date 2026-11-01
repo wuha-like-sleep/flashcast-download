@@ -1,169 +1,180 @@
 <p align="center">
-  <img src="assets/hero.png" alt="闪投 FlashCast：把屏幕投到会议室大屏上" width="100%">
+  <img src="assets/logo.svg" width="72" height="72" alt="FlashCast 标志">
+</p>
+
+<h1 align="center">闪投 FlashCast</h1>
+
+<p align="center"><strong>把画面和声音，带到大屏上。</strong></p>
+
+<p align="center">
+  局域网直连 &nbsp; / &nbsp; 端到端加密 &nbsp; / &nbsp; 无需注册账号
 </p>
 
 <p align="center">
-  <a href="https://github.com/wuha-like-sleep/flashcast-download/releases/latest"><b>下载最新版</b></a>
-  &nbsp;·&nbsp; <a href="INSTALL-WINDOWS.md">Windows 接收端安装</a>
-  &nbsp;·&nbsp; <a href="INSTALL-BOX.md">工控机安装和硬件要求</a>
-  &nbsp;·&nbsp; <a href="#常见问题">常见问题</a>
+  <a href="#下载"><strong>下载 0.4.3</strong></a>
+  &nbsp; · &nbsp; <a href="#开始投屏">开始投屏</a>
+  &nbsp; · &nbsp; <a href="#安装与更新">安装与更新</a>
+  &nbsp; · &nbsp; <a href="#常见问题">常见问题</a>
 </p>
 
-闪投把电脑和手机的屏幕投到电视、投影和会议室大屏上。画面只在局域网里点对点传输，不需要服务器、外网或账号。
+<br>
 
-## 特点
-
-| | |
-|:--|:--|
-| **低延迟，最高 4K** | 自研传输协议配合显卡硬件编码，前向纠错抵抗 Wi-Fi 丢包。根据网络、屏幕和解码能力自动选择 4K / 2K / 1080p，网络变差时自动降、恢复后再升。 |
-| **只有在场的人能投** | 每块屏幕显示 6 位投屏码，每次投屏结束都换一个新的，而且不在网络上公开。隔壁会议室或会场外的人投不进来；屏幕正在使用时，别人也投不进来。 |
-| **完全本地** | 不经过任何服务器，断开外网照常使用。投屏设备可以放在单独的网段，输入投屏码就能跨网段连接。 |
-| **工控机开箱即用** | 系统镜像写进 U 盘，插到工控机上开机就装好，不用先装系统；J1900 级别的老机器也能投 1080p。待机画面防烧屏，OLED 屏也能长时间开着。 |
-
-界面支持简体中文、繁體中文、English、日本語和한국어。
-
-## 下载
-
-**接收端**装在显示画面的设备上，**发送端**装在要把画面投出去的设备上。点文件名直接下载，所有文件见 [Releases 页面](https://github.com/wuha-like-sleep/flashcast-download/releases/latest)。
-
-桌面版、Android 版和盒子系统已更新至 **0.4.2**。桌面接收端设置入口为右下角小齿轮（F2），诊断数据默认隐藏（F1 查看）。
-
-### 接收端：装在电视、会议室大屏、展厅屏幕上
-
-| 设备 | 下载 | 说明 |
-|:--|:--|:--|
-| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="14"> **Windows 电脑** | [安装程序](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/FlashCast-Receiver-Setup-0.4.2-windows-x64.exe) · [免安装版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/FlashCast-Receiver-0.4.2-windows-x64.zip) | 会议室、展厅的显示电脑；可选开机自动启动，自动设置防火墙 · [安装说明](INSTALL-WINDOWS.md) |
-| <img src="https://cdn.simpleicons.org/androidtv/3DDC84" width="14"> **Android 电视 / 盒子** | [电视版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/FlashCast-TV-0.4.2-androidtv.apk) | 用 U 盘或电视助手安装 |
-| <img src="https://cdn.simpleicons.org/intel/0071C5" width="14"> **工控机 / 迷你主机** | [系统镜像](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/FlashCast-Box-0.4.2-amd64.img.xz) | 写进 U 盘，插到工控机上开机即可安装 · [安装说明和硬件要求](INSTALL-BOX.md) |
-| **Mac / Linux 电脑** | 用下方的电脑版 | 打开后点右上角“作为接收端” |
-
-### 发送端：装在要投屏的电脑和手机上
-
-| 设备 | 下载 | 说明 |
-|:--|:--|:--|
-| <img src="https://cdn.simpleicons.org/windows11/0078D4" width="14"> **Windows 10 / 11** | [安装程序](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/FlashCast-Setup-0.4.2-windows-x64.exe) · [免安装版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/FlashCast-0.4.2-windows-x64.zip) | 投屏和接收都可以；安装时可选语言 |
-| <img src="https://cdn.simpleicons.org/apple/999999" width="14"> **Mac**（Apple 芯片） | [电脑版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/FlashCast-0.4.2-macos-arm64.dmg) | M1 / M2 / M3 / M4；已通过苹果公证，拖进“应用程序”即可打开 |
-| <img src="https://cdn.simpleicons.org/apple/999999" width="14"> **Mac**（Intel 芯片） | [电脑版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/FlashCast-0.4.2-macos-x86_64.dmg) | 同上 |
-| <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="14"> **Ubuntu / Debian** | [安装包](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/flashcast_0.4.2_amd64.deb) | `sudo apt install ./flashcast_0.4.2_amd64.deb` |
-| <img src="https://cdn.simpleicons.org/linux/999999" width="14"> **其他 Linux** | [压缩包](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/flashcast-0.4.2-linux-amd64.tar.gz) | 解压后运行 `bin/flashcast` |
-| <img src="https://cdn.simpleicons.org/android/3DDC84" width="14"> **Android 手机** | [手机版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.2/FlashCast-0.4.2-android.apk) | Android 8.0 及以上 |
-| <img src="https://cdn.simpleicons.org/apple/999999" width="14"> **iPhone / iPad** | [TestFlight 测试版](https://testflight.apple.com/join/yDJJBePw) | 先安装 TestFlight，再打开链接加入；可用版本以 TestFlight 页面为准 |
-
-> 不知道 Mac 是哪种芯片：点屏幕左上角苹果菜单 → 关于本机，“芯片”一栏写 Apple M… 是 Apple 芯片，写 Intel 是 Intel 芯片。
->
-> 0.4 与 0.3 可以互相投画面；发送端和接收端都升级到 0.4 才能传声音。iOS 0.4.2 工程已准备完成，TestFlight 上线时间以实际上传和处理结果为准。
->
-> 从 0.3 升级请手动下载新版覆盖安装；Windows 沿用原目录并保留设置，Mac 退出应用后替换“应用程序”中的 FlashCast，Android 可直接覆盖安装。普通版 0.4 在空闲时用小三角提示后续更新，定制版由供应方提供更新。
-
-## 怎么用
+<p align="center">
+  <img src="assets/app-0.4.3.png" width="880" alt="FlashCast 0.4.3 发送端：输入八位投屏码、选择附近设备、调整声音和画质">
+</p>
 
 <table>
   <tr>
-    <td width="50%" valign="top"><img src="assets/receiver.png" alt="接收端待机画面"></td>
-    <td width="50%" valign="top"><img src="assets/app.png" alt="在发送端输入投屏码"></td>
-  </tr>
-  <tr>
-    <td valign="top"><b>1. 打开接收端</b><br>大屏上显示设备名和 6 位投屏码。投屏码每次投屏后都会换新的。</td>
-    <td valign="top"><b>2. 输入投屏码</b><br>在你的电脑或手机上打开闪投，输入大屏上的投屏码；也可以在“附近的设备”里点这块屏幕，再输入投屏码。</td>
+    <td width="33%" valign="top"><strong>画面与声音同步</strong><br><br>支持最高 4K / 60 帧，按设备与网络能力调整。可设置画质、分辨率和帧率上限。</td>
+    <td width="33%" valign="top"><strong>一台电脑，两块屏幕</strong><br><br>接收电脑可开启双屏同步，共用解码和声音输出。多路投屏各自保持独立会话。</td>
+    <td width="33%" valign="top"><strong>内容留在本地</strong><br><br>投屏不经过云端。随机投屏码完成配对，画面、声音和控制消息端到端加密。</td>
   </tr>
 </table>
 
-<p align="center">
-  <img src="assets/casting.png" alt="投屏中" width="55%"><br>
-  <b>3. 开始投屏</b>：画面马上出现在大屏上。可以随时暂停（大屏停在当前画面）或停止。
-</p>
+## 下载
+
+**当前版本 0.4.3** · [全部文件](https://github.com/wuha-like-sleep/flashcast-download/releases/tag/v0.4.3) · [SHA-256 校验](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/SHA256SUMS.txt)
+
+> **升级时请两端一起更新。** 0.4.3 默认使用加密配对，发送端和接收端都需要升级。iPhone / iPad 的可用版本以 TestFlight 页面为准。
+
+### 接收端
+
+安装在**显示画面**的设备上：电视、会议室电脑、投影所连的电脑或专用投屏盒。
+
+| 设备 | 下载 | 选择建议 |
+| :-- | :-- | :-- |
+| **Windows** | [安装程序](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-Receiver-Setup-0.4.3-windows-x64.exe) · [免安装版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-Receiver-0.4.3-windows-x64.zip) | 固定接收电脑推荐安装版，可设置名称与开机启动 |
+| **Android 电视 / 电视盒子** | [电视版 APK](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-TV-0.4.3-androidtv.apk) | Android TV 设备，通过 U 盘或电视助手安装 |
+| **工控机 / 迷你主机** | [系统镜像](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-Box-0.4.3-amd64.img.xz) | x86-64 专用接收盒，自带系统 · [安装指南](INSTALL-BOX.md) |
+| **Mac / Linux** | 使用下方的电脑版 | 打开后选择“作为接收端” |
+
+### 发送端
+
+安装在**分享画面**的电脑或手机上。桌面完整版也可作为接收端。
+
+| 设备 | 下载 | 说明 |
+| :-- | :-- | :-- |
+| **Windows 10 / 11** | [安装程序](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-Setup-0.4.3-windows-x64.exe) · [免安装版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-0.4.3-windows-x64.zip) | 64 位，支持发送与接收 |
+| **Mac · Apple 芯片** | [下载 DMG](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-0.4.3-macos-arm64.dmg) | Apple M 系列 · 已签名并通过苹果公证 |
+| **Mac · Intel 芯片** | [下载 DMG](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-0.4.3-macos-x86_64.dmg) | Intel Mac · 已签名并通过苹果公证 |
+| **Ubuntu / Debian** | [下载 DEB](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/flashcast_0.4.3_amd64.deb) | 下载后使用系统软件安装器打开 |
+| **其他 Linux** | [下载压缩包](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/flashcast-0.4.3-linux-amd64.tar.gz) | 解压后运行 `bin/flashcast` |
+| **Android 手机** | [下载 APK](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-0.4.3-android.apk) | Android 8.0 及以上 |
+| **iPhone / iPad** | [通过 TestFlight 安装](https://testflight.apple.com/join/yDJJBePw) | 先安装 TestFlight；可用版本以页面实际显示为准 |
+
+<details>
+<summary>不知道该选哪个 Mac 版本？</summary>
+
+点屏幕左上角苹果菜单 → **关于本机**。“芯片”显示 Apple M 系列时选 Apple 芯片版；“处理器”显示 Intel 时选 Intel 版。
+
+</details>
+
+## 开始投屏
+
+| 01 · 打开大屏 | 02 · 连接设备 | 03 · 分享画面 |
+| :-- | :-- | :-- |
+| 启动接收端，屏幕显示设备名称和投屏码。 | 在发送端选择接收设备，再输入大屏上的 **8 位投屏码**。 | 开始投屏后，可暂停、继续或停止；声音和画质可在发送端调整。 |
+
+两端需处于可以互通的网络。接收端不在列表中时，输入其 **IP 地址和投屏码**，或使用“搜索其他网段”。投屏码每次投屏结束后更换。
+
+## 安装与更新
+
+| 平台 | 操作 |
+| :-- | :-- |
+| **Windows** | 下载对应安装程序，退出投屏后覆盖安装。沿用安装目录并保留设备名称、语言和画质设置。详见 [接收端安装指南](INSTALL-WINDOWS.md)。 |
+| **Mac** | 退出 FlashCast，把新版拖入“应用程序”并替换。首次投屏需允许屏幕录制；传输声音需要 macOS 13 及以上。 |
+| **Android** | 下载与现有应用对应的 APK，直接覆盖安装；手机和电视使用各自版本。 |
+| **投屏盒** | 按 [系统镜像安装指南](INSTALL-BOX.md) 操作。写盘或重装会清除目标磁盘上的数据，请先确认目标磁盘。 |
+
+普通版仅在空闲时以小三角提示新版本，由你决定何时下载和安装。**定制版不检查在线更新，请联系供应方获取安装包。**
+
+<details>
+<summary>与旧版本一起使用</summary>
+
+0.4.3 不会自动退回旧版明文协议。请优先将所有发送端和接收端一起升级。
+
+桌面命令行保留明确开启的旧版兼容选项，仅供旧设备过渡使用；兼容模式不提供端到端加密。手机端和正常图形界面连接默认要求加密配对。
+
+</details>
 
 ## 常见问题
 
 <details>
-<summary><b>投屏码为什么每次都不一样？</b></summary>
-<br>
+<summary><strong>找不到接收端，或输入投屏码后连不上</strong></summary>
 
-为了只让在会议室里、看得到屏幕的人投屏：每次投屏结束，接收端都会换一个新的随机投屏码，而且投屏码不会在网络上公开。连续输错多次的设备会被暂时忽略一分钟。投屏中途网络断了，原来的电脑一分钟内会自动重连，不用重新输入。
+- 确认两端均为 0.4.3，接收端已经打开。
+- 确认设备可以互通；公共 Wi-Fi 的“客户端隔离”可能阻止连接。
+- 找到多个接收端时，先选择正确设备，再输入它当前显示的投屏码。
+- 跨网段时输入接收端 IP 地址，或在“搜索其他网段”中添加目标网段；路由和防火墙需放行相应端口。
 
-需要固定投屏码（例如打印贴在会议室）的，见 [Windows 接收端安装说明](INSTALL-WINDOWS.md) 里的“投屏码”一行。
+详见 [Windows 网络设置](INSTALL-WINDOWS.md#五跨网段) 或 [投屏盒安装指南](INSTALL-BOX.md)。
+
 </details>
 
 <details>
-<summary><b>找不到接收端</b></summary>
-<br>
+<summary><strong>画面卡顿、模糊或延迟偏高</strong></summary>
 
-- 确认两台设备在同一个网络（同一个 Wi-Fi 或同一台路由器）。
-- Windows 第一次运行时如果防火墙询问，请允许访问。
-- 部分公共 Wi-Fi 开启了“客户端隔离”，设备之间不能直接通信，可以换个网络。
-- 接收端在另一个网段时（例如电脑 192.168.3.x、大屏 192.168.4.x），设备列表里看不到它，直接输入投屏码即可；也可以点“搜索其他网段”把大屏所在的网段加进去。
+接收端优先使用有线网络，发送端优先使用 5 GHz Wi-Fi。画质取决于屏幕、编解码能力和可用带宽；多路投屏仍会共用网络带宽。
+
+可在发送端调整画质，或在接收端设置分辨率与帧率上限。桌面接收端按 **F1** 查看诊断数据，按 **F2** 打开设置。
+
 </details>
 
 <details>
-<summary><b>投屏设备能和办公网络分开吗？</b></summary>
-<br>
+<summary><strong>如何让两块显示器显示相同画面？</strong></summary>
 
-可以。把大屏、会议室电脑放到单独的网段或 VLAN（例如 192.168.4.x），办公电脑和手机留在原来的网段（例如 192.168.3.x）：
+把两块显示器连接到同一台接收电脑，在接收端待机设置中开启“双屏同步”。两块屏幕共用一次解码，声音输出一份。
 
-- 输入大屏上的 **6 位投屏码** 就能直接连上，不需要服务器；
-- 两个网段差别较大时（例如 192.168.3.x 和 10.10.4.x），输入大屏左下角显示的 **IP 地址**，再输入投屏码；或者在“搜索其他网段”里填上 `10.10.4.2/24`；
-- 防火墙只需要放行办公网到投屏网的 **TCP/UDP 47800–47809** 端口。
-
-画面只在发送端和那块屏幕之间点对点传输，不会广播到网络里的其他电脑。
 </details>
 
 <details>
-<summary><b>怎么暂停或断开投屏？</b></summary>
-<br>
+<summary><strong>投屏码与断线重连如何工作？</strong></summary>
 
-- **暂停**：发送端点“暂停”，大屏停在当前画面（这时可以切换窗口、查资料，大屏上看不到），点“继续”恢复。
-- **在发送端结束**：点“停止投屏”。
-- **在大屏这边断开**：按键盘 **Esc**，或移动鼠标后点右上角的“断开投屏”；Android 电视上连按两次遥控器 **返回键**。
+默认投屏码为 8 位随机数字，投屏结束后更换，配对时不发送明文投屏码。请只向允许使用屏幕的人提供它。
+
+网络意外断开后，原发送端可在 60 秒内凭本次会话的重连凭据恢复；主动停止后，该凭据立即失效。复制设备名称或设备编号不能替代配对。
+
 </details>
 
 <details>
-<summary><b>大屏一直开着会烧屏吗？</b></summary>
-<br>
+<summary><strong>需要外网吗？投屏内容会上传吗？</strong></summary>
 
-不会。待机画面会每隔几分钟轻微移动位置；10 分钟没人投屏就变成黑屏，只留一小块设备名和投屏码慢慢移动（照样能投）；投屏暂停超过 3 分钟画面自动变暗。有人投屏或按键就恢复。
+投屏不需要外网或账号。画面、声音和控制消息直接在发送端与接收端之间传输，不上传到我们的服务器。
+
+普通桌面版和 Android 版会在空闲时通过 HTTPS 向 GitHub 查询更新，不发送投屏内容、投屏码或设备名称；定制版关闭在线更新检查。详见 [隐私政策](PRIVACY.md)。
+
 </details>
 
 <details>
-<summary><b>Mac 投屏时提示没有屏幕录制权限</b></summary>
-<br>
-打开 系统设置 → 隐私与安全性 → 屏幕录制，允许 FlashCast，然后重新打开闪投。
+<summary><strong>Mac 提示没有屏幕录制权限</strong></summary>
+
+打开 **系统设置 → 隐私与安全性 → 屏幕录制**，允许 FlashCast，然后重新打开应用。更新后如果权限已开启却仍提示缺失，请使用应用内的“修复权限”重新授权。
+
 </details>
 
 <details>
-<summary><b>画面卡顿或延迟高</b></summary>
-<br>
+<summary><strong>最低系统要求</strong></summary>
 
-- 接收端尽量用有线网络；发送端用 5 GHz Wi-Fi，离路由器近一些。
-- 投屏时电脑版会显示网络状态（良好 / 一般 / 较差），网络较差时会自动降低分辨率。
-- 发送端电脑有独立显卡或较新的核显时，会自动用硬件编码，延迟更低。
-</details>
-
-<details>
-<summary><b>需要联网或注册账号吗？</b></summary>
-<br>
-投屏不需要外网或账号，画面和声音只在局域网内传输。普通桌面版和 Android 版会在空闲时通过 HTTPS 向 GitHub 检查新版本，不上传投屏内容、投屏码或设备名称；定制版关闭在线更新检查。
-</details>
-
-## 系统要求
-
-| | 最低要求 |
-|:--|:--|
-| Windows | Windows 10 64 位 |
-| macOS | macOS 12.3 |
-| Linux | glibc 2.35 以上（Ubuntu 22.04、Debian 12 及更新版本），X11 桌面 |
+| 平台 | 最低要求 |
+| :-- | :-- |
+| Windows | Windows 10，64 位 |
+| macOS | macOS 12.3；传输声音需要 macOS 13 及以上 |
+| Linux | glibc 2.35 以上，X11 桌面 |
 | Android 手机 / 电视 | Android 8.0 及以上 |
 | iPhone / iPad | iOS 15 及以上 |
-| 工控机 | 见 [安装说明和硬件要求](INSTALL-BOX.md)（最低 J1900 级别赛扬、2 GB 内存、8 GB 存储） |
-| 网络 | 同一局域网，或放行端口的相邻网段；推荐有线或 5 GHz Wi-Fi |
+| 工控机 / 迷你主机 | x86-64，详见 [硬件要求](INSTALL-BOX.md) |
 
-## 帮助与隐私
+支持简体中文、繁體中文、English、日本語和한국어。
 
-- 联系我们：[info@by-wave.com](mailto:info@by-wave.com)，也可以[提交 Issue](https://github.com/wuha-like-sleep/flashcast-download/issues)
-- [隐私政策](PRIVACY.md)：投屏内容留在局域网，说明本地设置与版本检查的处理方式
+</details>
 
 ---
 
 <p align="center">
-  <img src="assets/logo.svg" width="32"><br>
-  <sub>闪投 FlashCast · 可免费下载使用 · 第三方组件许可见安装包内的 <code>THIRD_PARTY_NOTICES.md</code></sub>
+  <a href="https://github.com/wuha-like-sleep/flashcast-download/issues">反馈问题</a>
+  &nbsp; · &nbsp; <a href="mailto:info@by-wave.com">联系我们</a>
+  &nbsp; · &nbsp; <a href="PRIVACY.md">隐私政策</a>
+  &nbsp; · &nbsp; <a href="https://github.com/wuha-like-sleep/flashcast-download/releases">历史版本</a>
 </p>
+
+<p align="center"><sub>FlashCast · 第三方组件许可见安装包中的 THIRD_PARTY_NOTICES.md</sub></p>
