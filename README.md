@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="#下载"><strong>下载 0.4.3</strong></a>
+  <a href="#下载"><strong>下载 0.4.4</strong></a>
   &nbsp; · &nbsp; <a href="#开始投屏">开始投屏</a>
   &nbsp; · &nbsp; <a href="#安装与更新">安装与更新</a>
   &nbsp; · &nbsp; <a href="#常见问题">常见问题</a>
@@ -33,9 +33,9 @@
 
 ## 下载
 
-**当前版本 0.4.3** · [全部文件](https://github.com/wuha-like-sleep/flashcast-download/releases/tag/v0.4.3) · [SHA-256 校验](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/SHA256SUMS.txt)
+**当前版本 0.4.4** · [全部文件](https://github.com/wuha-like-sleep/flashcast-download/releases/tag/v0.4.4) · [SHA-256 校验](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.4/SHA256SUMS.txt)
 
-> **升级时请两端一起更新。** 0.4.3 默认使用加密配对，发送端和接收端都需要升级。iPhone / iPad 的可用版本以 TestFlight 页面为准。
+> **0.4.4 与 0.4.3 兼容。** 建议两端都更新以获得完整优化；从更早版本升级时，请同时更新发送端和接收端。iPhone / iPad 的可用版本以 TestFlight 页面为准。
 
 ### 接收端
 
@@ -43,9 +43,9 @@
 
 | 设备 | 下载 | 选择建议 |
 | :-- | :-- | :-- |
-| **Windows** | [安装程序](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-Receiver-Setup-0.4.3-windows-x64.exe) · [免安装版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-Receiver-0.4.3-windows-x64.zip) | 固定接收电脑推荐安装版，可设置名称与开机启动 |
-| **Android 电视 / 电视盒子** | [电视版 APK](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-TV-0.4.3-androidtv.apk) | Android TV 设备，通过 U 盘或电视助手安装 |
-| **工控机 / 迷你主机** | [系统镜像](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-Box-0.4.3-amd64.img.xz) | x86-64 专用接收盒，自带系统 · [安装指南](INSTALL-BOX.md) |
+| **Windows** | [安装程序](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.4/FlashCast-Receiver-Setup-0.4.4-windows-x64.exe) · [免安装版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.4/FlashCast-Receiver-0.4.4-windows-x64.zip) | 固定接收电脑推荐安装版，可设置名称与开机启动 |
+| **Android 电视 / 电视盒子** | [电视版 APK](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.4/FlashCast-TV-0.4.4-androidtv.apk) | Android TV 设备，通过 U 盘或电视助手安装 |
+| **工控机 / 迷你主机** | [系统镜像](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.4/FlashCast-Box-0.4.4-amd64.img.xz) | x86-64 专用接收盒，自带系统 · [安装指南](INSTALL-BOX.md) |
 | **Mac / Linux** | 使用下方的电脑版 | 打开后选择“作为接收端” |
 
 ### 发送端
@@ -54,12 +54,12 @@
 
 | 设备 | 下载 | 说明 |
 | :-- | :-- | :-- |
-| **Windows 10 / 11** | [安装程序](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-Setup-0.4.3-windows-x64.exe) · [免安装版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-0.4.3-windows-x64.zip) | 64 位，支持发送与接收 |
-| **Mac · Apple 芯片** | [下载 DMG](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-0.4.3-macos-arm64.dmg) | Apple M 系列 · 已签名并通过苹果公证 |
-| **Mac · Intel 芯片** | [下载 DMG](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-0.4.3-macos-x86_64.dmg) | Intel Mac · 已签名并通过苹果公证 |
-| **Ubuntu / Debian** | [下载 DEB](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/flashcast_0.4.3_amd64.deb) | 下载后使用系统软件安装器打开 |
-| **其他 Linux** | [下载压缩包](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/flashcast-0.4.3-linux-amd64.tar.gz) | 解压后运行 `bin/flashcast` |
-| **Android 手机** | [下载 APK](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.3/FlashCast-0.4.3-android.apk) | Android 8.0 及以上 |
+| **Windows 10 / 11** | [安装程序](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.4/FlashCast-Setup-0.4.4-windows-x64.exe) · [免安装版](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.4/FlashCast-0.4.4-windows-x64.zip) | 64 位，支持发送与接收 |
+| **Mac · Apple 芯片** | [下载 DMG](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.4/FlashCast-0.4.4-macos-arm64.dmg) | Apple M 系列 · 已签名并通过苹果公证 |
+| **Mac · Intel 芯片** | [下载 DMG](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.4/FlashCast-0.4.4-macos-x86_64.dmg) | Intel Mac · 已签名并通过苹果公证 |
+| **Ubuntu / Debian** | [下载 DEB](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.4/flashcast_0.4.4_amd64.deb) | 下载后使用系统软件安装器打开 |
+| **其他 Linux** | [下载压缩包](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.4/flashcast-0.4.4-linux-amd64.tar.gz) | 解压后运行 `bin/flashcast` |
+| **Android 手机** | [下载 APK](https://github.com/wuha-like-sleep/flashcast-download/releases/download/v0.4.4/FlashCast-0.4.4-android.apk) | Android 8.0 及以上 |
 | **iPhone / iPad** | [通过 TestFlight 安装](https://testflight.apple.com/join/yDJJBePw) | 先安装 TestFlight；可用版本以页面实际显示为准 |
 
 <details>
@@ -91,7 +91,7 @@
 <details>
 <summary>与旧版本一起使用</summary>
 
-0.4.3 不会自动退回旧版明文协议。请优先将所有发送端和接收端一起升级。
+0.4.4 与 0.4.3 使用加密连接，不会自动退回更早版本的明文协议。请优先将所有发送端和接收端一起升级。
 
 桌面命令行保留明确开启的旧版兼容选项，仅供旧设备过渡使用；兼容模式不提供端到端加密。手机端和正常图形界面连接默认要求加密配对。
 
@@ -102,7 +102,7 @@
 <details>
 <summary><strong>找不到接收端，或输入投屏码后连不上</strong></summary>
 
-- 确认两端均为 0.4.3，接收端已经打开。
+- 确认两端均为 0.4.3 或更新版本，接收端已经打开。
 - 确认设备可以互通；公共 Wi-Fi 的“客户端隔离”可能阻止连接。
 - 找到多个接收端时，先选择正确设备，再输入它当前显示的投屏码。
 - 跨网段时输入接收端 IP 地址，或在“搜索其他网段”中添加目标网段；路由和防火墙需放行相应端口。
