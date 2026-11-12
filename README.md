@@ -178,3 +178,13 @@
 </p>
 
 <p align="center"><sub>FlashCast · 第三方组件许可见安装包中的 THIRD_PARTY_NOTICES.md</sub></p>
+
+## 发送端下载页
+
+固定网址：https://wuha-like-sleep.github.io/flashcast-download/
+
+页面源文件在 `docs/`。只展示公开的 FlashCast 发送端，iPhone / iPad 使用 App Store。
+
+发布、编辑或删除正式 Release 后，`Sync latest downloads and publish site` 自动读取最新正式版，生成同站点 `latest.json` 并部署页面。安装包仍由 GitHub Releases 提供，访客无需访问 GitHub API 即可获取下载链接。草稿和预发布不会成为下载目标。发布时应先上传完整安装包到草稿，再发布 Release。
+
+可在 Actions 中手动运行该流程重新同步。独立域名通过仓库 Pages 设置绑定，前端全部使用相对路径，无需改写下载页面。

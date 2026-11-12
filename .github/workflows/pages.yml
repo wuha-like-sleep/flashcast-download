@@ -1,0 +1,52 @@
+name: Sync latest downloads and publish site
+on:
+  push:
+    branches: [main]
+    paths: ['docs/**', 'scripts/**', 'tests/**', 'package.json', '.github/workflows/pages.yml']
+  release:
+    types: [published, edited, deleted, released]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  sync-release:
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Build from the trusted main branch after a release change
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --repo "$GITHUB_REPOSITORY" --ref main
+  deploy:
+    if: github.event_name != 'release'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify sender download selection
+        run: npm test
+      - name: Sync the latest published release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/build-site.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Publish download page
+        id: deployment
+        uses: actions/deploy-pages@v4

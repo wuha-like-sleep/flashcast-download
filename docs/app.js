@@ -8,10 +8,20 @@ async function refresh() {
   document.querySelector('#download-error').hidden = true;
   status.textContent = '正在获取最新正式版…';
   try {
-    const response = await fetch(API, {cache:'no-store', headers:{Accept:'application/vnd.github+json'},signal:AbortSignal.timeout(10000)});
-    if (!response.ok) throw new Error('Release unavailable');
-    const release = await response.json();
-    const assets = senderAssets(release);
+    let release, assets;
+    // The release event builds a same-site manifest. Visitors can download
+    // without using GitHub's public API quota. Live lookup covers previews
+    // and the brief interval before the first manifest deployment.
+    for (const url of ['./latest.json', API]) {
+      try {
+        const response = await fetch(url, {cache:'no-store',signal:AbortSignal.timeout(10000)});
+        if (!response.ok) throw new Error('Release unavailable');
+        release = await response.json();
+        assets = senderAssets(release);
+        break;
+      } catch { release = undefined; }
+    }
+    if (!release || !assets) throw new Error('Release unavailable');
     for (const link of document.querySelectorAll('[data-asset]')) {
       const key = link.dataset.asset, asset = assets[key];
       link.textContent = asset ? labels[key] + (link.classList.contains('button') ? ' ↓' : '') : '此版本暂未提供';
