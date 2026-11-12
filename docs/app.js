@@ -21,7 +21,8 @@ async function refresh() {
       const meta = document.querySelector(`[data-meta="${key}"]`);
       if (meta && asset) meta.textContent = `${release.tag_name} · ${(asset.size / 1048576).toFixed(1)} MB`;
     }
-    status.textContent = `最新正式版 ${release.tag_name} · 自动更新`;
+    status.textContent = `最新正式版 ${release.tag_name}`;
+    recommend();
   } catch {
     status.textContent = '最新版本暂时不可用';
     document.querySelector('#download-error').hidden = false;
@@ -29,6 +30,7 @@ async function refresh() {
       link.removeAttribute('href'); link.setAttribute('aria-disabled','true');
       link.textContent = link.classList.contains('button') ? '等待获取最新版本' : labels[link.dataset.asset];
     }
+    recommend();
   } finally {loading = false;}
 }
 document.querySelector('#retry').addEventListener('click', refresh);
@@ -38,4 +40,20 @@ if (platform) {
  const card = document.querySelector(`[data-platform="${platform}"]`);
  card.classList.add('recommended'); card.querySelector('.platform-tag').textContent = '当前设备';
 }
+function recommend() {
+ const action = document.querySelector('#recommended-download');
+ const note = document.querySelector('#recommended-note');
+ if (!platform) return;
+ const card = document.querySelector(`[data-platform="${platform}"]`);
+ const link = card.querySelector('.button');
+ if (platform !== 'macos' && link.hasAttribute('href')) {
+   action.href = link.href;
+   action.textContent = platform === 'ios' ? '在 App Store 下载 ↗' : labels[platform] + ' ↓';
+ } else {
+   action.href = '#download-' + platform;
+   action.textContent = platform === 'macos' ? '选择 Mac 芯片版本 ↓' : '查看设备下载选项 ↓';
+ }
+ note.textContent = platform === 'macos' ? 'Apple M 系列与 Intel 芯片均有对应版本' : '已为你找到当前设备的下载选项 · 其他系统请见下方';
+}
+recommend();
 refresh();
