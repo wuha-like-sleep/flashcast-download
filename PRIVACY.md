@@ -1,6 +1,6 @@
 # 隐私政策 · Privacy Policy
 
-更新日期：2026 年 10 月 29 日
+更新日期：2026 年 11 月 14 日
 
 闪投（FlashCast，以下简称"本软件"）包括电脑版、手机版（iOS、Android）、电视版和接收端系统。我们非常重视你的隐私，简单说：**投屏画面和声音只在局域网内传输，不上传到我们的服务器。**
 
@@ -14,7 +14,7 @@
 
 - 只有在你主动开始投屏后，本软件才会录制屏幕。在 iOS 上，录制由系统的"屏幕录制/直播"功能控制，你可以随时在控制中心或状态栏停止。
 - 画面和启用投声音后的音频经过编码后，**直接通过局域网发送到你选择的接收端**（例如会议室的电脑或电视），不经过任何服务器，不会保存到文件，也不会上传到互联网。
-- 暂停投屏后，本软件不再录制和发送画面。
+- 暂停投屏后，本软件停止发送新的投屏画面。iOS 的系统屏幕直播可继续运行，直到你通过系统控制中心停止。
 
 ## 本地网络权限
 
@@ -22,7 +22,7 @@
 
 ## 版本检查
 
-普通桌面版和 Android 手机、电视版会在空闲时通过 HTTPS 访问 GitHub，查询新版本和对应安装包。请求不包含投屏内容、声音、投屏码或设备名称；GitHub 作为请求接收方会收到 IP 地址、请求时间等正常网络信息。点击更新后，由系统浏览器打开下载地址。定制版在构建时关闭这项检查；iOS 通过 App Store 或 TestFlight 管理更新。
+普通桌面版和 Android 手机、电视版会在空闲时通过 HTTPS 访问 GitHub，查询新版本和对应安装包。请求不包含投屏内容、声音、投屏码或设备名称；GitHub 作为请求接收方会收到 IP 地址、请求时间等正常网络信息。点击更新后，由系统浏览器打开下载地址。定制版在构建时关闭这项检查；iOS 和 tvOS 通过 App Store 或 TestFlight 管理更新。
 
 ## 保存在本机的设置
 
@@ -44,4 +44,4 @@
 
 ## English summary
 
-FlashCast has no accounts, ads, analytics or crash reporting. Screen content and enabled audio are sent directly over the local network to the selected receiver, without being stored or uploaded to our servers. Standard desktop and Android editions check GitHub for updates over HTTPS while idle. These requests do not include casting content, audio, pairing codes or device names; GitHub receives normal network metadata such as the source IP address and request time. Custom editions disable online update checks, and iOS updates are handled through App Store or TestFlight. Settings remain on the device; desktop uninstallers preserve them for reinstallation. Questions: [info@by-wave.com](mailto:info@by-wave.com) or [GitHub Issues](https://github.com/wuha-like-sleep/flashcast-download/issues).
+FlashCast has no accounts, ads, analytics or crash reporting. Screen content and enabled audio are sent directly over the local network to the selected receiver, without being stored or uploaded to our servers. Standard desktop and Android editions check GitHub for updates over HTTPS while idle. These requests do not include casting content, audio, pairing codes or device names; GitHub receives normal network metadata such as the source IP address and request time. Custom editions disable online update checks, and iOS/tvOS updates are handled through App Store or TestFlight. Settings remain on the device; desktop uninstallers preserve them for reinstallation. Questions: [info@by-wave.com](mailto:info@by-wave.com) or [GitHub Issues](https://github.com/wuha-like-sleep/flashcast-download/issues).
